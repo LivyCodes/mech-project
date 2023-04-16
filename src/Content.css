@@ -1,5 +1,17 @@
 body {
   background-color: #70c7c0;
+}
+.wrapper {
+  display: flex;
+}
+.navigation {
+  float: left;
+  width: 15%;
+  display: flex;
+}
+.main {
+  width: 85%;
+  float: left;
   align-items: center;
   text-align: center;
 }

@@ -7,8 +7,9 @@ import "./Navbar.css";
 function LeftNavBar() {
   return (
     <div className="left-nav">
-      <Navbar bg="light" expand="sm" className="justify-content-start">
+      <Navbar bg="light" expand="sm">
         <Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="#home" className="custom-nav-link">

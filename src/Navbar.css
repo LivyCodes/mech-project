@@ -1,13 +1,10 @@
 .left-nav {
-  position: fixed;
   top: 0;
   left: 0;
-  float: left;
-  width: 15%;
   height: 100%;
   background-color: #333;
   color: #fff;
-  padding: 50px;
+  padding: 50px 15px;
 }
 
 .navbar-nav {
@@ -23,4 +20,5 @@
   font-size: 16px;
   color: #fff;
   font-family: "Source Serif Pro", serif;
+  text-align: left;
 }
