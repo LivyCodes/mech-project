@@ -1,55 +1,33 @@
-import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "./Navbar.css";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 function LeftNavBar() {
   return (
-    <div className="left-nav">
-      <Navbar bg="light" expand="sm">
-        <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#home" className="custom-nav-link">
-                HOME
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                A/C SERVICES
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                AUTO MAINTENANCE
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                BRAKES
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                TRANSMISSIONS
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                FLOAT SERVICES
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                EXHAUST & MUFFLERS
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                OIL CHANGES
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                STRUTS
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                ABOUT US
-              </Nav.Link>
-              <Nav.Link href="#link" className="custom-nav-link">
-                CONTACT US
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
